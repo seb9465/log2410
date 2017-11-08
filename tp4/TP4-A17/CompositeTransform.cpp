@@ -15,7 +15,7 @@ CompositeTransform * CompositeTransform::clone(void) const
 {
 	CompositeTransform* newClone = new CompositeTransform;
 
-    // A Completer...
+	newClone->m_transforms = this->m_transforms;
 
 	return newClone;
 }
@@ -23,5 +23,6 @@ CompositeTransform * CompositeTransform::clone(void) const
 // Executer les commandes enfant
 void CompositeTransform::transform(const Chunk_iterator& c, AbsAudioFile& outFile) const
 {
-   // A Completer...
+	for (auto i : m_transforms)
+		i->transform(c, outFile);
 }
