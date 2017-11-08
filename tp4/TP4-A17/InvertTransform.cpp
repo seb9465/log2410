@@ -1,8 +1,7 @@
 #include "InvertTransform.h"
 
 // Methode pour appliquer une transformation d'inversion à un Chunk
-void InvertTransform::transform(const Chunk_iterator& c, AbsAudioFile& outFile) const
-{ 
+void InvertTransform::transform(const Chunk_iterator& c, AbsAudioFile& outFile) const { 
 	int chunkSize = c->size();						// Copie de la taille du Chunk.
 	char* tmpChunk = c->get();						// Copie des données du Chunk.
 
