@@ -1,2 +1,6 @@
-﻿  CompositeTransform.cpp
+﻿  RepeatTransform.cpp
+  InvertTransform.cpp
+b:\git_depot\log2410\tp4\tp4-a17\inverttransform.cpp(5): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+  CompositeTransform.cpp
+  Génération de code en cours...
   PolySonor.vcxproj -> B:\git_depot\log2410\tp4\TP4-A17\x64\Debug\PolySonor.exe
