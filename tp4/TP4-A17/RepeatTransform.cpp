@@ -2,7 +2,7 @@
 
 void RepeatTransform::transform(const Chunk_iterator& c, AbsAudioFile& outFile) const
 {
-	// On repete m_nRepetitions fois le 'Chunk' au 'outFile'.
+	// On ajoute m_nRepetitions fois le Chunk au fichier de sortie.
 	for (int i = 0; i < m_nRepetitions; i++)
 		outFile.addChunk(c);
 }
