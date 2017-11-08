@@ -23,6 +23,7 @@ CompositeTransform * CompositeTransform::clone(void) const
 // Executer les commandes enfant
 void CompositeTransform::transform(const Chunk_iterator& c, AbsAudioFile& outFile) const
 {
+	// On applique la transformation pour chaque transformation se trouvant dans le vecteur 'm_transform'.
 	for (auto i : m_transforms)
 		i->transform(c, outFile);
 }
