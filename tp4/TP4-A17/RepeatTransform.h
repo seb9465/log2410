@@ -20,6 +20,6 @@ public:
 	// Methode pour appliquer une transformation a une partie de fichier audio
 	virtual void transform(const Chunk_iterator& c, AbsAudioFile& outFile) const;
 
-	virtual size_t getNRepetitions(void);
+	virtual size_t getNRepetitions(void) const;
 };
 #endif // !defined(_HEADER_REPEAT_TRANSFORM_)
